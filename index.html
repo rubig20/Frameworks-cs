@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frameworks CSS: Tipos y Aplicación</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+    
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="main-menu"></button>
+        <div class="title-bar-title">Menú</div>
+    </div>
+
+    <div class="top-bar" id="main-menu">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Frameworks CSS</li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#comparativa">Comparativa</a></li>
+                <li><a href="#aplicacion">Aplicación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="orbit" role="region" aria-label="Frameworks CSS" data-orbit>
+        <div class="orbit-wrapper">
+            <div class="orbit-controls">
+                <button class="orbit-previous"><span class="show-for-sr">Anterior</span>&#9664;&#xFE0E;</button>
+                <button class="orbit-next"><span class="show-for-sr">Siguiente</span>&#9654;&#xFE0E;</button>
+            </div>
+            <ul class="orbit-container">
+                <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="img1.jpg" alt="Foundation CSS">
+                        <figcaption class="orbit-caption">Foundation - Framework profesional responsive</figcaption>
+                    </figure>
+                </li>
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="bootstrap.png" alt="Bootstrap">
+                        <figcaption class="orbit-caption">Bootstrap - El framework CSS más popular</figcaption>
+                    </figure>
+                </li>
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="bulma.png" alt="Bulma">
+                        <figcaption class="orbit-caption">Bulma - Framework basado en Flexbox</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">Foundation CSS</span></button>
+            <button data-slide="1"><span class="show-for-sr">Bootstrap</span></button>
+            <button data-slide="2"><span class="show-for-sr">Bulma</span></button>
+        </nav>
+    </div>
+
+ 
+    <div class="grid-container">
+ 
+        <section id="inicio" class="grid-x grid-padding-x">
+            <div class="cell">
+                <h2>¿Qué son los Frameworks CSS?</h2>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-6">
+                        <img src="frame.png" alt="Frameworks CSS">
+                    </div>
+                    <div class="cell medium-6">
+                        <p>Un framework CSS es una biblioteca de estilos predefinidos que permite agilizar el desarrollo de interfaces web consistentes y responsive. Estos frameworks proporcionan:</p>
+                        <ul>
+                            <li>Sistema de grid para layouts</li>
+                            <li>Componentes UI preestilizados</li>
+                            <li>Utilidades para tipografía, colores, espaciado</li>
+                            <li>Compatibilidad entre navegadores</li>
+                            <li>Diseño responsive</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="tipos" class="grid-x grid-padding-x" style="margin-top: 2rem;">
+            <div class="cell">
+                <h2>Tipos de Frameworks CSS</h2>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-4">
+                        <div class="card">
+                            <img src="bootstrap.png" alt="Frameworks completos">
+                            <div class="card-section">
+                                <h4>Frameworks completos</h4>
+                                <p>Como Bootstrap y Foundation, que ofrecen un conjunto completo de herramientas para UI.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <div class="card">
+                            <img src="tailwind.webp" alt="Utility-First">
+                            <div class="card-section">
+                                <h4>Utility-First</h4>
+                                <p>Como Tailwind CSS, que proporciona clases de utilidad en lugar de componentes predefinidos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <div class="card">
+                            <img src="style.jpeg" alt="CSS-in-JS">
+                            <div class="card-section">
+                                <h4>CSS-in-JS</h4>
+                                <p>Como Styled Components, que permite escribir CSS directamente en JavaScript.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <section id="comparativa" class="grid-x grid-padding-x" style="margin-top: 2rem;">
+            <div class="cell">
+                <h2>Comparativa de Frameworks CSS</h2>
+                <div class="responsive-embed widescreen">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Nys1FAglqb8" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <table class="hover">
+                    <thead>
+                        <tr>
+                            <th>Framework</th>
+                            <th>Tamaño</th>
+                            <th>Enfoque</th>
+                            <th>Popularidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bootstrap</td>
+                            <td>~300KB</td>
+                            <td>Componentes</td>
+                            <td>Muy alta</td>
+                        </tr>
+                        <tr>
+                            <td>Foundation</td>
+                            <td>~250KB</td>
+                            <td>Customización</td>
+                            <td>Alta</td>
+                        </tr>
+                        <tr>
+                            <td>Tailwind</td>
+                            <td>~1MB+</td>
+                            <td>Utility-first</td>
+                            <td>Creciente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+       
+        <section id="aplicacion" class="grid-x grid-padding-x" style="margin-top: 2rem;">
+            <div class="cell">
+                <h2>Aplicación de Frameworks CSS</h2>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-6">
+                        <h4>Ventajas</h4>
+                        <ul>
+                            <li>Desarrollo más rápido</li>
+                            <li>Consistencia visual</li>
+                            <li>Responsive por defecto</li>
+                            <li>Comunidad y documentación</li>
+                        </ul>
+                    </div>
+                    <div class="cell medium-6">
+                        <h4>Desventajas</h4>
+                        <ul>
+                            <li>Curva de aprendizaje</li>
+                            <li>Estilos genéricos</li>
+                            <li>Tamaño del archivo CSS</li>
+                            <li>Dependencia externa</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callout">
+                    <h5>¿Cuándo usar un framework CSS?</h5>
+                    <p>Los frameworks son ideales para proyectos con plazos ajustados, equipos que necesitan consistencia o cuando se requiere compatibilidad con múltiples navegadores y dispositivos.</p>
+                </div>
+            </div>
+        </section>
+
+      
+        <section id="contacto" class="grid-x grid-padding-x" style="margin-top: 2rem;">
+            <div class="cell medium-6">
+                <h2>Formulario de Contacto</h2>
+                <form>
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell medium-6">
+                            <label>Nombre
+                                <input type="text" placeholder="Tu nombre">
+                            </label>
+                        </div>
+                        <div class="cell medium-6">
+                            <label>Email
+                                <input type="email" placeholder="tu@email.com">
+                            </label>
+                        </div>
+                        <div class="cell">
+                            <label>Framework de interés
+                                <select>
+                                    <option value="foundation">Foundation</option>
+                                    <option value="bootstrap">Bootstrap</option>
+                                    <option value="tailwind">Tailwind</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="cell">
+                            <label>Mensaje
+                                <textarea placeholder="Tu mensaje"></textarea>
+                            </label>
+                        </div>
+                        <div class="cell">
+                            <fieldset class="fieldset">
+                                <legend>Tipo de consulta</legend>
+                                <input id="radio1" type="radio" name="consulta" value="tecnica" checked><label for="radio1">Técnica</label>
+                                <input id="radio2" type="radio" name="consulta" value="comercial"><label for="radio2">Comercial</label>
+                                <input id="radio3" type="radio" name="consulta" value="otra"><label for="radio3">Otra</label>
+                            </fieldset>
+                        </div>
+                        <div class="cell">
+                            <input id="checkbox1" type="checkbox"><label for="checkbox1">Acepto recibir información</label>
+                        </div>
+                        <div class="cell">
+                            <button type="submit" class="button">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="cell medium-6">
+                <div class="callout">
+                    <h4>Información de contacto</h4>
+                    <p>Para más información sobre frameworks CSS, puedes contactarnos:</p>
+                    <ul class="no-bullet">
+                        <li><strong>Email:</strong> rubigutierrez.com</li>
+                        <li><strong>Teléfono:</strong> +51 963588675</li>
+                        <li><strong>Dirección:</strong> Calle Framework, 123</li>
+                    </ul>
+                </div>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="grid-container full">
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-6">
+                <p>&copy; 2025 Frameworks CSS - Todos los derechos reservados</p>
+            </div>
+            <div class="cell medium-6">
+                <ul class="menu align-right">
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
